@@ -7,10 +7,19 @@ UberText corpus: https://lang.org.ua/en/corpora/#anchor5
 
 ## Installation
 
-Install all dependencies:
+Install all dependencies by **pip**:
 
 ```shell
 pip install -r requirements.txt
+```
+
+or install all dependencies by **pipenv**:
+
+```shell
+pipenv install
+
+# and then activate virtual environment
+pipenv shell
 ```
 
 ## How to run
