@@ -1,4 +1,8 @@
-## Word Frequencies Counting for UberText corpus
+# Word Frequencies Counting for UberText corpus
+
+## What is UberText corpus?
+
+**UberText corpus** is the corpus of real Ukrainian texts.
 
 UberText corpus: https://lang.org.ua/en/corpora/#anchor5
 
