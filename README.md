@@ -1,10 +1,44 @@
-## UberText corpus word frequencies counting
-[UberText corpus](https://lang.org.ua/en/corpora/)  
-[License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)  
+## Word Frequencies Counting for UberText corpus
 
-How to run:  
+UberText corpus: https://lang.org.ua/en/corpora/#anchor5
+
+- License of the corpus: **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.**
+- License URL: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+## Installation
+
+Install all dependencies:
+
+```shell
+pip install -r requirements.txt
 ```
+
+## How to run
+
+1) Download the corpus
+
+```shell
 mkdir data
-pip install -r requirements.txt  
-jupyter notebook
+cd data
+
+wget https://lang.org.ua/static/downloads/corpora/news.lemmatized.shuffled.txt.bz2
+bzip2 -d news.lemmatized.shuffled.txt.bz2
+
+wget https://lang.org.ua/static/downloads/corpora/wiki_dump.lemmatized.txt.bz2
+bzip2 -d wiki_dump.lemmatized.txt.bz2
+
+wget https://lang.org.ua/static/downloads/corpora/fiction.lemmatized.shuffled.txt.bz2
+bzip2 -d fiction.lemmatized.shuffled.txt.bz2
+```
+
+2) Open the notebook in Jupyter
+
+```shell
+jupyter notebook ubercorpus-counting.ipynb
+```
+
+3) Or just use the `counter.py` script
+
+```shell
+python counter.py
 ```
