@@ -9,7 +9,7 @@ import re
 import pickle
 
 from collections import defaultdict
-from tqdm.notebook import tqdm
+from progressbar import progressbar
 from typing import List
 
 # Functions for the task
@@ -46,7 +46,7 @@ freqs = defaultdict(lambda: 0)
 # Get words from datasets
 for dataset_path in datasets:
     with open(dataset_path, 'r') as f:
-        for line in tqdm(f):
+        for line in progressbar(f.readlines()):
             tokens = preprocess_text(line)
             d = count(tokens)
             freqs = merge(d, freqs)
